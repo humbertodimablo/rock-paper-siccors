@@ -1,0 +1,77 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Title container styles */
+#titleContainer {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+#titleContainer p {
+    font-size: 3em; /* Large font size */
+    color: #333; /* Dark gray text color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun typography */
+}
+
+/* Game display container styles */
+#gameDisplay {
+    width: 600px; /* Fixed width for the game display */
+    height: 600px; /* Fixed height for the game display */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #fff; /* White background */
+    border: 2px solid #333; /* Dark border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: relative; /* Position for absolute children */
+}
+
+/* Button styles */
+
+#choices {
+    display: flex;
+}
+.btn {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    border: 2px solid #333; /* Dark border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding */
+    font-size: 1.2em; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    margin: 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.1s; /* Animation for hover and click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+}
+
+.btn:active {
+    background-color: red; /* Red background when clicked */
+    color: white; /* White text when clicked */
+    transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Game score styles */
+#gameScore {
+    margin-top: 20px; /* Space above the score */
+    font-size: 1.5em; /* Font size for score */
+    color: #333; /* Dark gray text color */
+}
+
+/* Additional styles for playerChoice and computerChoice can be added here */
