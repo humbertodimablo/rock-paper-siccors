@@ -10,19 +10,26 @@
 
 <body>
 
-<div id="titleContainer"><p>Rock Paper Scissors</p> </div>
-
-   <div id="gameDisplay"></div>
-<div id="choices">
-   <button onclick="playGame(`rock`)" class="btn" id="rock">✊</button> 
-   <button onclick="playGame(`paper)" class="btn" id="paper">🫱</button> 
-   <button onclick="playGame(`scissors`)" class="btn" id="scissors">✌</button>
+<header>Rock Paper Scissors</header>
+<div class="scoreboard">
+  <div>
+    <div>Player Score</div>
+    <div id="playerScore">0</div>
+  </div>
+  <div>
+    <div>Computer Score</div>
+    <div id="computerScore">0</div>
+  </div>
 </div>
-   <div id="gameScore">
-    
-    <span id="score" >Score: 0</span> <span id="rounds">Round: 0</span>
-
+<div class="choices" role="group" aria-label="Choose your play">
+  <button class="choice-btn" data-choice="Rock" aria-label="Choose Rock">✊</button>
+  <button class="choice-btn" data-choice="Paper" aria-label="Choose Paper">✋</button>
+  <button class="choice-btn" data-choice="Scissors" aria-label="Choose Scissors">✌️</button>
 </div>
+<div class="winner-message" id="winnerMessage" aria-live="polite"></div>
+<div class="rounds-container" id="roundsContainer" aria-label="Game rounds history">
+</div>
+<button class="reset-btn" id="resetBtn" style="display:none;">Play Again</button>
 
 
     </body>
